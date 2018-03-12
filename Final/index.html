@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>A-Frame</title>
+    <meta name="description" content="A-Frame">
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene stats="true">
+      <a-assets>
+        <a-asset-item id="road_CornerLines_mesh1_obj" src="models/road_CornerLines_mesh1.obj"></a-asset-item>
+        <a-asset-item id="road_CornerLines_mesh1_mtl" src="images/road_CornerLines_mesh1.mtl"></a-asset-item>
+        <a-asset-item id="tree_small_mesh_obj" src="models/tree_small_mesh.obj"></a-asset-item>
+        <a-asset-item id="tree_small_mesh_mtl" src="images/tree_small_mesh.mtl"></a-asset-item>
+        <a-asset-item id="store_small_mesh_obj" src="models/store_small_mesh.obj"></a-asset-item>
+        <a-asset-item id="store_small_mesh_mtl" src="images/store_small_mesh.mtl"></a-asset-item>
+        <a-asset-item id="hydrant_mesh_obj" src="models/hydrant_mesh.obj"></a-asset-item>
+        <a-asset-item id="hydrant_mesh_mtl" src="images/hydrant_mesh.mtl"></a-asset-item>
+        <a-asset-item id="lamp_mesh_obj" src="models/lamp_mesh.obj"></a-asset-item>
+        <a-asset-item id="lamp_mesh_mtl" src="images/lamp_mesh.mtl"></a-asset-item>
+        <a-asset-item id="Prop_Tree_01_obj" src="models/Prop_Tree_01.obj"></a-asset-item>
+        <a-asset-item id="Prop_Tree_01_mtl" src="images/Prop_Tree_01.mtl"></a-asset-item>
+        <a-asset-item id="bush_large_mesh_obj" src="models/bush_large_mesh.obj"></a-asset-item>
+        <a-asset-item id="bush_large_mesh_mtl" src="images/bush_large_mesh.mtl"></a-asset-item>
+        <a-asset-item id="car_mesh_obj" src="models/car_mesh.obj"></a-asset-item>
+        <a-asset-item id="car_mesh_mtl" src="images/car_mesh.mtl"></a-asset-item>
+        <img id="sky_box" src="images/skybox.png" />
+      </a-assets>
+        <a-entity obj-model="obj: #road_CornerLines_mesh1_obj;mtl: #road_CornerLines_mesh1_mtl;" ></a-entity>
+        <a-entity obj-model="obj: #tree_small_mesh_obj;mtl: #tree_small_mesh_mtl;" ></a-entity>
+        <a-entity obj-model="obj: #store_small_mesh_obj;mtl: #store_small_mesh_mtl;" ></a-entity>
+        <a-entity obj-model="obj: #hydrant_mesh_obj;mtl: #hydrant_mesh_mtl;" ></a-entity>
+        <a-entity obj-model="obj: #lamp_mesh_obj;mtl: #lamp_mesh_mtl;" ></a-entity>
+        <a-entity obj-model="obj: #Prop_Tree_01_obj;mtl: #Prop_Tree_01_mtl;" ></a-entity>
+        <a-entity obj-model="obj: #bush_large_mesh_obj;mtl: #bush_large_mesh_mtl;" ></a-entity>
+        <a-entity obj-model="obj: #car_mesh_obj;mtl: #car_mesh_mtl;" rotation="0 -90 0" ></a-entity>
+        <a-sky color="#3498db"></a-sky>
+      </a-scene stats="true">
+  </body>
+</html>
