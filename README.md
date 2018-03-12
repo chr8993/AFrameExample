@@ -1,3 +1,5 @@
+Source: [https://christiangomez.me/blog/16/vr-in-the-browser-oh-yes-a-frame/](https://christiangomez.me/blog/16/vr-in-the-browser-oh-yes-a-frame/)
+
 # Introduction
 What exactly is WebVR and how does it work? Well, **WebVR** is a web specification that allows you to experience virtual reality from within your browser, pretty cool right? The first adaption of WebVR was introduced in 2014 by a developer at Mozilla. Simply put, WebVR exposes a few APIs that allows developers to interact with VR devices like the HTC Vive, Oculus Rift, and Google Cardboard. The underlying power behind WebVR is **WebGL** which allows us to offset the rendering of graphics to the graphics processor for much better performance. WebVR utilizes WebGL and various other APIs to get VR device information and send frames to them. It also is able to get other information about the device like the controller position and head tracking.
 
