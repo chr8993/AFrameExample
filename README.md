@@ -23,14 +23,14 @@ Since A-Frame utilizes HTML markup for its structure, we can initialize a scene 
 ```
 In this scene, we added a very basic box at position `0 1 -3` where 0 is the x axis, 1 is the y axis, and -3 is the z axis. A negative value in the z axis means the object extends in and appears closer where a negative value in the x axis means the object is shifted to the left.  We also rotated the box 45 degress on the y axis and assigned it a color for visibility. Adding components to your scene is very simple and doesn't require much effort at all but what about more complicated objects?
 # Adding Objects
-Adding simple objects like boxes, and spheres is fun and all, but what about the cool stuff!? The latest standard for efficient transmission of 3d assets and scenes is **glTF**, which aims to provide simplicity of loading 3d models and textures. It's been called the "JPEG of 3D Models" for its portability and versatility. Let's load a basic car glTF model into our A-Frame scene and using the `<a-entity>` object. First, you will need to download the model [here](https://christiangomez.me). Then include it in your project directory and add this line within your `<a-scene>` tags.
+Adding simple objects like boxes, and spheres is fun and all, but what about the cool stuff!? The latest standard for efficient transmission of 3d assets and scenes is **glTF**, which aims to provide simplicity of loading 3d models and textures. It's been called the "JPEG of 3D Models" for its portability and versatility. Let's load a basic car glTF model into our A-Frame scene and using the `<a-entity>` object. First, you will need to download the model [here](https://github.com/chr8993/AFrameExample). Then include it in your project directory and add this line within your `<a-scene>` tags.
 ```html
 <a-entity gltf-model="url(car.gltf)"></a-entity>
 ```
 The result should look similar to the image below. By simply adding the `a-entity` tag and specifying the glTF model, the 3d model and textures are loaded without much effort at all. It's pretty awesome how simple the process has become to load 3d models within a web browser.
 ![AFrame](https://res.cloudinary.com/cinemate/image/upload/v1520804211/frame-_vkdiz5.png)
 # Animation
-Since the glTF format supports embedded animations we can use an animated glTF model to show how animations work within A-Frame. In order to begin using animations within A-Frame, there is an additional dependency that we will need to include as a script in the document head. We will need to include the **animation-mixer** component from the A-Frame extras library. Lets add the A-Frame extras extension to our document and include an animated cube object in our project. You can download the animated cube model [here](https://christiangomez.me) and add it to your project folder. The code should look similar to what is below.
+Since the glTF format supports embedded animations we can use an animated glTF model to show how animations work within A-Frame. In order to begin using animations within A-Frame, there is an additional dependency that we will need to include as a script in the document head. We will need to include the **animation-mixer** component from the A-Frame extras library. Lets add the A-Frame extras extension to our document and include an animated cube object in our project. You can download the animated cube model [here](https://github.com/chr8993/AFrameExample) and add it to your project folder. The code should look similar to what is below.
 ```html
 <html>
 	<head>
@@ -45,7 +45,7 @@ Since the glTF format supports embedded animations we can use an animated glTF m
 	</body>
 </html>
 ```
-The end result should look like the image below. The cube should be spinning immediately after adding the `animation-mixer` attribute to your `a-entity` object. The animated will be looped by default.
+The end result should look like the image below. The cube should be spinning immediately after adding the `animation-mixer` attribute to your `a-entity` object. The animated will be looped by default. You can see the live result here [https://chr8993.github.io/AFrameExample](https://chr8993.github.io/AFrameExample/).
 ![CubeAnimated](https://res.cloudinary.com/cinemate/image/upload/v1520875072/animated_cube_xx52zz.gif)
 # Importing Unity Scenes
 Importing `obj` files with textures already included allows you to basically create whatever environment you want.  For this example, I've created a Unity script that allows you to export obj files from a Unity scene. Of course, this step is optional since all that will be exported is obj and texture files which can also be found online or created by yourself. But if you have exposure to Unity already which a lot of game developers already do, then this could be very useful for exporting your already built scenes from Unity. The source code and instructions for this script are available on [github](https://github.com/chr8993/AFrameExporter) and I recommend you check it out to see how the internals work. In this example, we will export a simple low poly scene from unity and import it into our A-Frame project.
@@ -95,4 +95,4 @@ The output of the script will include a folder of `models` and `images` that wil
   </body>
 </html>
 ```
-You'll notice that all of our 3d components models and textures have been pre-loaded using the `<a-assets>` tag. This is using the A-Frame asset management system that pre-loads and caches our assets for much better performance. We've also included all of our models using the `<a-entity>` tag that will then reference the appropriate obj model and material pre-defined in the asset management system.
+You'll notice that all of our 3d components models and textures have been pre-loaded using the `<a-assets>` tag. This is using the A-Frame asset management system that pre-loads and caches our assets for much better performance. We've also included all of our models using the `<a-entity>` tag that will then reference the appropriate obj model and material pre-defined in the asset management system. You can see the final result here [https://chr8993.github.io/AFrameExample/Final](https://chr8993.github.io/AFrameExample/Final).
