@@ -36,7 +36,7 @@ Since the glTF format supports embedded animations we can use an animated glTF m
 	<head>
 		<title>Hello metaverse!</title>
 		<script src="https://aframe.io/releases/0.8.0/aframe.min.js" type="text/javascript"></script>
-		<script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v3.13.1/dist/aframe-extras.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v3.13.1/dist/aframe-extras.min.js"></script>
 	</head>
 	<body>
 		<a-scene>
