@@ -95,4 +95,4 @@ The output of the script will include a folder of `models` and `images` that wil
   </body>
 </html>
 ```
-You'll notice that all of the 3d components models and textures have been pre-loaded using the `<a-assets>` tag. This is using the A-Frame asset management system that pre-loads and caches our assets for much better performance. We've also included all of our models using the `<a-entity>` tag that will then reference the appropriate OBJ model and material pre-defined in the asset management system. You can see the final result here [https://chr8993.github.io/AFrameExample/Final](https://chr8993.github.io/AFrameExample/Final).
+You'll notice that all of our 3d components models and textures have been pre-loaded using the `<a-assets>` tag. This is using the A-Frame asset management system that pre-loads and caches our assets for much better performance. We've also included all of our models using the `<a-entity>` tag that will then reference the appropriate OBJ model and material pre-defined in the asset management system. You can see the final result here [https://chr8993.github.io/AFrameExample/Final](https://chr8993.github.io/AFrameExample/Final).
